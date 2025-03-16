@@ -1,0 +1,27 @@
+{
+  "name": "Azure CLI & PowerShell Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.azure-account",
+        "ms-vscode.azurecli",
+        "ms-azure-devops.azure-pipelines",
+        "ms-vscode.powershell",
+        "hashicorp.terraform",
+        "ms-azuretools.vscode-azureterraform"
+
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/terraform": {},
+    "ghcr.io/devcontainers/features/powershell:1": {
+      "modules": [
+        "Az"
+      ]
+    }
+  }
+}
